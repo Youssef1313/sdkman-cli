@@ -1,4 +1,4 @@
-name: Pull Requests
+name: Pull Requests - auto-assign
 on: pull_request_target
 jobs:
   test:
