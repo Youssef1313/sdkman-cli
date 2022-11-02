@@ -1,13 +1,11 @@
 name: Pull Requests
-on: pull_request_target
+on: pull_request
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-        with:
-            ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
